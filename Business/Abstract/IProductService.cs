@@ -12,7 +12,7 @@ namespace Business.Abstract
 		IDataResult<List<Product>> GetAll();
 		IDataResult<List<Product>> GetAllByCategoryId(int id);
 		IDataResult<List<Product>> GetByUnitsPrice(decimal min, decimal max);
-		IDataResult<List<Product>> GetProductDetails();
+		IDataResult<List<ProductDetailDto>> GetProductDetails();
 		IDataResult<Product> GetById(int productId);
 		IResult Add(Product product);
 	}
